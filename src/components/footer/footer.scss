@@ -1,0 +1,30 @@
+footer {
+    background-color: var(--color-bg);
+    display: flex;
+    padding: 2rem 20rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > span,
+footer > a:visited {
+    color: var(--color-title-font);
+}
+
+.github-links {
+    display: flex;
+    gap: 4rem;
+    font-family: Gilroy Regular;
+}
+
+.github-links > a {
+    text-decoration: none;
+    color: var(--color-title-font);
+    font-weight: 900;
+}
+
+@media (max-width: 1350px) {
+	footer {
+		padding: 2rem 10rem;
+	}
+}

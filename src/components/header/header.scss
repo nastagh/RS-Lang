@@ -1,0 +1,44 @@
+header {
+	background-color: var(--color-bg);
+	padding: 2rem 20rem;
+	text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav > a {
+	font-size: 1.25rem;
+	color: var(--color-menu-font);
+	padding: 0 1rem;
+	transition: 0.5s linear
+}
+
+nav > a:hover {
+	color: #123C69;
+}
+
+.login-icon {
+  width: 40px;
+}
+
+.logo {
+	font-size: 1.5rem;
+	color: #123C69;
+	user-select: none;
+}
+
+.logo-blue {
+	text-transform: uppercase;
+	color:var(--color-menu-font);
+}
+
+@media (max-width: 1350px) {
+	header {
+		padding: 2rem 10rem;
+	}
+}

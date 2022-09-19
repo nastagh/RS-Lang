@@ -1,0 +1,58 @@
+
+.appWrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+html[data-theme ='dark']{
+		--color-bg: #121830;
+		--color-bg-options-block: #121830;
+main{
+	background-color: #121830 !important;
+	color: #f8f1ee !important;
+}
+header{
+	background-color: #121830;
+	color: #f8f1ee !important;
+}
+footer{
+	background-color: #121830;
+	color: #f8f1ee !important;
+}
+}
+
+:root {
+	--color-bg-options-block:#fffdfc;
+	--color-bg: #f8f1ee;
+	--color-menu-font: #ac3b61;
+	--color-title-font: #123C69;
+	--color-active: #0f7dc6;
+}
+/* Шапка сайта */
+
+main {
+	text-align: center;
+	flex: 1 0 auto;
+	position: relative;
+}
+
+footer {
+  text-align: center;
+	flex: 0 0 auto;
+}
+
+.link{
+  color: var(--color-menu-font);
+
+  &:hover {
+    color: var(--color-title-font);
+  }
+}
+
+:export {
+	primary: #ac3b61;
+  secondary: #123C69;
+	grey: #bdbdbd;
+}
+
