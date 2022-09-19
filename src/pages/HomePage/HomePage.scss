@@ -1,0 +1,195 @@
+.main-block {
+    background-color: var(--color-bg);
+    padding: 4rem 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--color-menu-font);
+}
+
+.main-text-wrapper {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.main-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: var(--color-title-font);
+    margin-bottom: 1rem;
+}
+
+.main-text {
+    font-family: Gilroy Regular;
+    color: var(--color-menu-font);
+    margin-bottom: 3rem;
+}
+
+.main-button {
+    width: 250px;
+    height: 63px;
+    background-color: var(--color-menu-font);
+    color: var(--color-bg);
+    font-family: Gilroy Regular;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s linear
+}
+
+.main-button:hover {
+    background-color: var(--color-title-font);
+}
+
+.main-img {
+    width: 600px;
+}
+
+.options-block {
+    background-color: var(--color-bg-options-block);
+}
+
+.block-title {
+    color: var(--color-title-font);
+    font-size: 2rem;
+    padding-top: 4rem;
+}
+
+.options-wrapper {
+    padding: 5rem 20rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: Gilroy Regular;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 260px;
+    height: 345px;
+    background-color: var(--color-bg);
+    text-align: left;
+    padding: 3rem 3rem 0 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.option-title {
+    font-size: 2rem;
+    color: var(--color-menu-font);
+    padding-bottom: 2rem;
+}
+
+.option-description {
+    color: var(--color-title-font);
+}
+
+.option-img {
+    position: absolute;
+    width: 300px;
+    top: 11rem;
+    left: 4rem;
+}
+
+.option-img-small {
+    width: 240px;
+}
+
+.team-block {
+    background-color: var(--color-bg);
+    border-bottom: 2px solid var(--color-menu-font);
+}
+
+.team-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 20rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-bg-options-block);
+    width: 568px;
+    height: 150px;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.team-member-img {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.team-member-andy {
+    background-image: url('./../../../public/assets/images/andy.jpg');
+}
+
+.team-member-nastya {
+    background-image: url('./../../../public/assets/images/nasta.jpg');
+}
+
+.team-member-yana {
+    background-image: url('./../../../public/assets/images/yana.jpg');
+}
+
+.team-member-text-wrap {
+    width: 75%;
+}
+
+.team-member-name {
+    color: var(--color-menu-font);
+    font-size: 1.5rem;
+}
+
+.team-member-name::before {
+    content: url('./../../../public/assets/images/icons8-github-32.png');
+}
+
+.team-member-text {
+    font-family: Gilroy Regular;
+}
+
+@media (max-width: 1700px) {
+    .main-block {
+        padding: 4rem 10rem;
+    }
+
+    .options-wrapper {
+        padding: 4rem 10rem;
+    }
+
+    .team-wrapper {
+        padding: 4rem 10rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .main-block {
+        padding: 4rem 5rem;
+    }
+
+    .options-wrapper {
+        padding: 4rem 5rem;
+    }
+
+    .team-wrapper {
+        padding: 4rem 5rem;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+}
